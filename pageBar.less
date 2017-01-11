@@ -1,0 +1,36 @@
+.page-bar {
+  margin-top: 40px;
+  user-select: none;
+  text-align: center;
+  span {
+    display: inline-block;
+    width: 2em;
+    color: #999;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+    transition: .25s;
+    &.pre, &.next {
+      width: auto;
+    }
+    &:hover{
+      background: #eee;
+    }
+  }
+  .active {
+    color: #2e9057;
+    cursor: default;
+    text-decoration: none;
+
+    &:hover{
+      background: transparent;
+    }
+  }
+  .hidden {
+    opacity: .25;
+    cursor: not-allowed;
+    &:hover{
+      background: transparent;
+    }
+  }
+}
